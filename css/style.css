@@ -1,0 +1,139 @@
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    /* background: rgb(34, 32, 32);
+    background: rgba(29, 28, 28, 0.5); Black see-through */
+     /* color: #131212;  */
+    width: 80%;
+    height: 30%;
+    transition: .5s all ease;
+    opacity:0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 20px; top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    backface-visibility: hidden;
+    font-weight: bolder;
+  }
+.sec{
+  color: rgb(255, 255, 255);
+}
+
+  /* .l2{
+    color: rgb(255, 255, 255);
+  }
+.l3{
+  color: rgb(2, 0, 0);
+}*/
+ /* .na{
+    background-color: none; */
+     /* background-image: url(../img/mc.jpg); */
+   /* }  */
+  
+.image1 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.col-sm-6:hover:hover .image1 {
+  opacity: 0.5;
+}
+
+  .col-sm-6:hover .overlay {
+    opacity: 1;
+  }
+  
+.cl{
+  color: rgb(255, 255, 255);
+}
+
+  .ii{
+      background-color: rgb(158, 56, 153);
+  }
+
+  .i1{
+    /* background-color: rgb(164, 157, 165); */
+    background-image:url(../img/bg3.jpg);
+}
+
+
+.item {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.item .item-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.item .item-wrap:after {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s all ease-in-out;
+}
+
+
+.item .item-wrap img {
+  transition: .3s transform ease;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.item .item-wrap > .work-info {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 20px;
+  transition: .3s all ease;
+}
+
+
+.item .item-wrap > .work-info span {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.item .item-wrap:hover {
+  text-decoration: none;
+}
+
+.item .item-wrap:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.item .item-wrap:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item .item-wrap:hover .work-info {
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+}
