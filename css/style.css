@@ -112,15 +112,6 @@
 }
 
 
-.item .item-wrap > .work-info span {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-}
-
-.item .item-wrap:hover {
-  text-decoration: none;
-}
 
 .item .item-wrap:hover img {
   -webkit-transform: scale(1.05);
@@ -128,7 +119,7 @@
 }
 
 .item .item-wrap:hover:after {
-  opacity: 1;
+  opacity: ;
   visibility: visible;
 }
 
